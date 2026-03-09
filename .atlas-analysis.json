@@ -1,0 +1,98 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Mini-Compilador Educativo",
+  "projectDescription": "An educational compiler that translates a simplified high-level language to x86 assembly code compatible with EMU8086.",
+  "theme": "aspen",
+  "primaryColor": "#2563EB",
+  "lightColor": "#60A5FA",
+  "darkColor": "#1E40AF",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "installation"
+        ]
+      },
+      {
+        "group": "Compiler Architecture",
+        "pages": [
+          "architecture/overview",
+          "architecture/lexical-analysis",
+          "architecture/syntax-analysis",
+          "architecture/semantic-analysis",
+          "architecture/intermediate-code",
+          "architecture/interpreter",
+          "architecture/code-generation"
+        ]
+      },
+      {
+        "group": "Language Reference",
+        "pages": [
+          "language/grammar",
+          "language/syntax",
+          "language/keywords",
+          "language/operators",
+          "language/examples"
+        ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          "api/scanner",
+          "api/parser",
+          "api/semantic-analyzer",
+          "api/ir-generator",
+          "api/interpreter",
+          "api/asm-generator"
+        ]
+      },
+      {
+        "group": "Usage",
+        "pages": [
+          "usage/gui-mode",
+          "usage/console-mode",
+          "usage/compilation-process",
+          "usage/output-formats"
+        ]
+      },
+      {
+        "group": "Advanced",
+        "pages": [
+          "advanced/ast-structure",
+          "advanced/three-address-code",
+          "advanced/x86-assembly",
+          "advanced/emu8086-compatibility"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Lexical analysis with token generation",
+    "Recursive descent parsing with AST construction",
+    "Semantic validation for variables and operations",
+    "Three-address code (IR) generation",
+    "AST-based interpreter for immediate execution",
+    "x86 assembly code generation for EMU8086",
+    "GUI interface with syntax highlighting",
+    "Console mode for quick testing",
+    "Comprehensive error reporting with line/column tracking"
+  ],
+  "publicApiSurface": [
+    "Scanner.escanear_tokens()",
+    "Parser.parsear()",
+    "AnalizadorSemantico.analizar()",
+    "GeneradorIR.generar()",
+    "Interprete.ejecutar()",
+    "GeneradorASM.generar()",
+    "compilar()",
+    "InterfazCompilador",
+    "TipoToken",
+    "Token",
+    "Expresion",
+    "Sentencia",
+    "Programa"
+  ]
+}
